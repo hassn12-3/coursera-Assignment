@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Menu</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <title>Food, LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Our Menu</h1>
-  <div class="container">
-    <div class="section chicken">
-      <div class="section-title">Chicken</div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus elit.</p>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Food, LLC</a>
     </div>
-    <div class="section beef">
-      <div class="section-title">Beef</div>
-      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
-    </div>
-    <div class="section sushi">
-      <div class="section-title">Sushi</div>
-      <p>Curabitur nec lectus eget urna tristique fermentum non a arcu.</p>
+
+    <div class="collapse navbar-collapse" id="mobile-menu">
+      <ul class="nav navbar-nav visible-xs">
+        <li><a href="#chicken">Chicken</a></li>
+        <li><a href="#beef">Beef</a></li>
+        <li><a href="#sushi">Sushi</a></li>
+      </ul>
     </div>
   </div>
+</nav>
+
+<div class="container-fluid section">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1 class="text-center">Our Menu</h1>
+
+      <div class="description" id="chicken">
+        <h2>Chicken</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis mollitia quia quisquam odit consequuntur. Veritatis, assumenda? Voluptatem quo voluptates dolorem nihil recusandae sed ex voluptas deserunt. Consectetur, aspernatur nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis mollitia quia quisquam odit consequuntur. Veritatis, assumenda? Voluptatem quo voluptates dolorem nihil recusandae sed ex voluptas deserunt. Consectetur, aspernatur nesciunt.</p>
+      </div>
+
+      <div class="description" id="beef">
+        <h2>Beef</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis mollitia quia quisquam odit consequuntur. Veritatis, assumenda? Voluptatem quo voluptates dolorem nihil recusandae sed ex voluptas deserunt. Consectetur, aspernatur nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis mollitia quia quisquam odit consequuntur. Veritatis, assumenda? Voluptatem quo voluptates dolorem nihil recusandae sed ex voluptas deserunt. Consectetur, aspernatur nesciunt.</p>
+      </div>
+
+      <div class="description" id="sushi">
+        <h2>Sushi</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis mollitia quia quisquam odit consequuntur. Veritatis, assumenda? Voluptatem quo voluptates dolorem nihil recusandae sed ex voluptas deserunt. Consectetur, aspernatur nesciunt.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus quis mollitia quia quisquam odit consequuntur. Veritatis, assumenda? Voluptatem quo voluptates dolorem nihil recusandae sed ex voluptas deserunt. Consectetur, aspernatur nesciunt.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
-
